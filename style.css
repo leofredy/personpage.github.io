@@ -1,0 +1,53 @@
+.unfold-header {
+    position: fixed;
+  
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 100vw;
+    height: 115px;
+    padding: 15px;
+    background-color: var(--background-main);
+
+    position: relative;
+  
+}
+
+.container button {
+    border: none;
+}
+
+.container .unfold-navigation .lni-menu {
+    font-size: 32px;
+    background-color: var(--background-main);
+}
+
+.container nav {
+    display: none;
+}
+
+.container nav.toggle-nav {
+    display: block;
+    width: 330px;
+    padding: 3px 12px;
+    background-color: var(--background-main);
+    box-shadow: 0px 0px 10px rgba(000, 000, 000, 0.1);
+    
+    position: absolute;
+    top: 130px;
+}
+
+.container nav ul {
+    list-style-type: none;
+}
+
+.container nav ul li {
+    margin: 4px 0;
+}
+
+.container nav ul li a:hover{
+    color: var(--opening-words);
+}
