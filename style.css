@@ -8,8 +8,9 @@
     
     width: 100vw;
     height: 115px;
-    padding: 4.2%;
+    padding: 30px 15px;
     background-color: var(--background-main);
+    box-shadow: 0px 0px 24px 0px rgba(134, 134, 134, 0.25);
 
     position: relative;
   
@@ -19,7 +20,8 @@
     border: none;
 }
 
-.unfold-header .container .unfold-navigation .lni-menu {
+.unfold-header .container button .lni-menu,
+.unfold-header .container button .lni-close {
     font-size: 32px;
     background-color: var(--background-main);
 }
@@ -61,4 +63,25 @@
 
 .unfold-header .container nav ul li a:hover{
     color: var(--opening-words);
+}
+
+@media(min-width: 768px){
+    .unfold-header .container {
+        padding: 30px 39px;
+    }
+    .unfold-header .container nav.toggle-nav {
+        padding: 5px 39px;
+    }
+}
+
+/*Muda navbar*/
+@media(min-width: 1024px){
+    .unfold-header .container,
+    .unfold-header .container nav.toggle-nav {
+        padding: 30px 47px;
+    }
+}
+
+@media(min-width: 1366px){
+
 }
