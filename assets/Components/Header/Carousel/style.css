@@ -1,13 +1,13 @@
 .carousel{
+    display: flex;
+    flex-direction: column;
+    padding-top: 115px;
+
     position: relative;
 }
 
 .carousel .items {
-
     height: 350px;
-
-    padding-top: 115px;
-
     display: flex;
     position: relative;
 }
@@ -29,7 +29,8 @@
     display: flex;
 
     position: absolute;
-    z-index: 99;
+    bottom: 0;
+    align-self: center;
 }
 
 .carousel .sphere-controller .sphere-item {
