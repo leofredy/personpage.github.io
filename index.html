@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/Components/Header/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/Components/Header/Carousel/style.css">
 </head>
 <body>
     <header class="unfold-header">
@@ -41,10 +42,29 @@
                 </div>
             </nav>
         </div>
+
     </header>
     
+    <div class="carousel">
+        <div class="arrow-controller">
+            <div class="go-back"></div>
+            <div class="next"></div>
+        </div>
+    
+        <div class="items">
+            <img class="selected" src="./assets/img/js-carousel.jpg" alt="">
+            <img src="./assets/img/node-carousel.png" alt="">
+        </div>
+
+        <div class="sphere-controller">
+            <div class="sphere-item selected"></div>
+            <div class="sphere-item"></div>
+        </div>
+    </div>
+
     <div class="conteudo">
     </div>
     <script src="./assets/Components/Header/dropdown.js"></script>
+    <script src="./assets/Components/Header/Carousel/standbyAnimation.js"></script>
 </body>
 </html>

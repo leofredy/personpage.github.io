@@ -1,0 +1,49 @@
+.carousel{
+    position: relative;
+}
+
+.carousel .items {
+
+    height: 350px;
+
+    padding-top: 115px;
+
+    display: flex;
+    position: relative;
+}
+
+.carousel .items img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+.carousel .items img.selected {
+    opacity: 1;
+}
+.carousel .sphere-controller {
+    display: flex;
+
+    position: absolute;
+    z-index: 99;
+}
+
+.carousel .sphere-controller .sphere-item {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+
+    background-color: #C9C9C9;
+}
+
+.carousel .sphere-controller .sphere-item:not(:first-child){
+    margin-left: 5px;
+}
+
+.carousel .sphere-controller .sphere-item.selected{
+    background-color: rgb(68, 67, 67);
+}
