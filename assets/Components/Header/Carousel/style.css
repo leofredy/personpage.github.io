@@ -5,7 +5,6 @@
 
     position: relative;
 }
-
 .carousel .items {
     height: 350px;
     display: flex;
@@ -25,6 +24,38 @@
 .carousel .items img.selected {
     opacity: 1;
 }
+
+.carousel  .next{
+    align-self: flex-end;  
+    margin-right: 8px;
+}
+
+.carousel  .go-back {
+    align-self: flex-start;
+    margin-left: 8px;
+}
+
+.carousel  .next,
+.carousel  .go-back {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: calc(50% + 25px);
+    z-index: 99;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(68, 67, 67, 0.4);
+}
+
+.carousel  .next .lni-chevron-right,
+.carousel  .go-back .lni-chevron-left {
+    font-size: 15px;
+    color: #FFF;
+}
+
 .carousel .sphere-controller {
     display: flex;
 
