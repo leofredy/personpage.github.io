@@ -85,7 +85,9 @@
     }
 
     .unfold-header .unfold-navigation nav.toggle {
-        
+        position: static;
+        width: auto;
+        padding: 0;
     }
     
     .unfold-header .unfold-navigation nav {
