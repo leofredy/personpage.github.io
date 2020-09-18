@@ -30,7 +30,7 @@
     display: none;
 }
 
-.unfold-header .unfold-navigation nav .nav {
+.unfold-header .unfold-navigation nav .container {
     width: 100%;
     height: 100%;
     padding: 3px 12px;
@@ -69,7 +69,7 @@
     .unfold-header .unfold-navigation {
         padding: 30px 39px;
     }
-    .unfold-header .unfold-navigation nav.toggle-nav {
+    .unfold-header .unfold-navigation nav.toggle {
         padding: 5px 39px;
     }
 }
@@ -82,6 +82,10 @@
 
     .unfold-header .unfold-navigation button {
         display: none;
+    }
+
+    .unfold-header .unfold-navigation nav.toggle {
+        
     }
     
     .unfold-header .unfold-navigation nav {
