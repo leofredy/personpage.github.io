@@ -41,7 +41,7 @@
     height: 40px;
     position: absolute;
     top: calc(50% + 25px);
-    z-index: 99;
+    z-index: 98;
 
     display: flex;
     align-items: center;

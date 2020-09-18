@@ -7,6 +7,8 @@ document.querySelector('.lni-menu')
             event.target.classList.remove('lni-close');
             event.target.classList.add('lni-menu');
         }
-        document.querySelector('#navbar')
-            .classList.toggle('toggle-nav');
+        document.querySelector('.unfold-header nav')
+            .classList.toggle('toggle');
+
+            console.log('presseding')
     });

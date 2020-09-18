@@ -1,8 +1,4 @@
-.unfold-header {
-    position: fixed;
-    z-index: 99;
-}
-.unfold-header .container {
+.unfold-header .unfold-navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,24 +8,29 @@
     background-color: var(--background-main);
     box-shadow: 0px 0px 24px 0px rgba(134, 134, 134, 0.25);
     
-    position: relative;
+    position: fixed;
+    z-index: 99;
 }
 
-.unfold-header .container button {
+.unfold-header .logo {
+    height: 50px;
+}
+
+.unfold-header .unfold-navigation button {
     border: none;
 }
 
-.unfold-header .container button .lni-menu,
-.unfold-header .container button .lni-close {
+.unfold-header .unfold-navigation button .lni-menu,
+.unfold-header .unfold-navigation button .lni-close {
     font-size: 32px;
     background-color: var(--background-main);
 }
 
-.unfold-header .container nav {
+.unfold-header .unfold-navigation nav {
     display: none;
 }
 
-.unfold-header .container nav .container-nav {
+.unfold-header .unfold-navigation nav .nav {
     width: 100%;
     height: 100%;
     padding: 3px 12px;
@@ -37,7 +38,7 @@
     box-shadow: 0px 0px 10px rgba(000, 000, 000, 0.1);
 }
 
-.unfold-header .container nav.toggle-nav {
+.unfold-header .unfold-navigation nav.toggle {
     display: block;
     width: 100%;
     padding: 4.2%;
@@ -48,70 +49,70 @@
     left: 0;
 }
 
-.unfold-header .container nav ul {
+.unfold-header .unfold-navigation nav ul {
     list-style-type: none;
 }
 
-.unfold-header .container nav ul li {
+.unfold-header .unfold-navigation nav ul li {
     margin: 4px 0;
 }
 
-.unfold-header .container nav ul li a {
+.unfold-header .unfold-navigation nav ul li a {
     transition: color 0.8s ease;
 }
 
-.unfold-header .container nav ul li a:hover{
+.unfold-header .unfold-navigation nav ul li a:hover{
     color: var(--opening-words);
 }
 
 @media(min-width: 768px){
-    .unfold-header .container {
+    .unfold-header .unfold-navigation {
         padding: 30px 39px;
     }
-    .unfold-header .container nav.toggle-nav {
+    .unfold-header .unfold-navigation nav.toggle-nav {
         padding: 5px 39px;
     }
 }
 
 /*Muda navbar*/
 @media(min-width: 1024px){
-    .unfold-header .container{
+    .unfold-header .unfold-navigation{
         padding: 30px 47px;
     }
 
-    .unfold-header .container button {
+    .unfold-header .unfold-navigation button {
         display: none;
     }
     
-    .unfold-header .container nav {
+    .unfold-header .unfold-navigation nav {
         display: block;
     }
 
-    .unfold-header .container nav .container-nav {
+    .unfold-header .unfold-navigation nav .container {
         padding: 0;
         box-shadow: none;
     }
 
-    .unfold-header .container nav .container-nav ul {
+    .unfold-header .unfold-navigation nav .container ul {
         display: flex;
     }
 
-    .unfold-header .container nav .container-nav ul li:not(:first-child) {
+    .unfold-header .unfold-navigation nav .container ul li:not(:first-child) {
         margin-left: 30px;
     }  
 
 }
 
 @media(min-width: 1366px){
-    .unfold-header .container {
+    .unfold-header .unfold-navigation {
         padding: 30px 128px;
     }
 
-    .unfold-header .container img {
+    .unfold-header .unfold-navigation img {
         width: 165px;
     }
 
-    .unfold-header .container nav .container-nav ul li a {
+    .unfold-header .unfold-navigation nav .container ul li a {
         font-size: 1.7rem;
     }
 }
