@@ -1,0 +1,30 @@
+main section.unfold-aboutme {
+    padding: 70.5px 15px 0 15px;
+}
+
+main section.unfold-aboutme .apresentation h1 {
+    margin-bottom: 20px;
+}
+
+main section.unfold-aboutme .apresentation h1, 
+main section.unfold-aboutme .apresentation p {
+    text-align: center;
+}
+
+@media(min-width: 768px){
+    main section.unfold-aboutme {
+        padding: 70.5px 39px 0 39px;
+    }
+}
+
+@media(min-width: 1024px){
+    main section.unfold-aboutme {
+        padding: 70.5px 47px 0 47px;
+    }
+}
+
+@media(min-width: 1366px){
+    main section.unfold-aboutme {
+        padding: 70.5px 128px 0 128px;
+    }
+}

@@ -42,12 +42,13 @@
     position: absolute;
     top: calc(50% + 25px);
     z-index: 98;
-
+    
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     background-color: rgba(68, 67, 67, 0.4);
+    cursor: pointer;
 }
 
 .carousel  .next .lni-chevron-right,
