@@ -1,15 +1,105 @@
 main section.unfold-aboutme {
     padding: 70.5px 15px 0 15px;
 }
+main section.unfold-aboutme .short-presentation {
+    margin-bottom: 19.5px;
+}
 
-main section.unfold-aboutme .apresentation h1 {
+main section.unfold-aboutme .short-presentation h1 {
     margin-bottom: 20px;
 }
 
-main section.unfold-aboutme .apresentation h1, 
-main section.unfold-aboutme .apresentation p {
+main section.unfold-aboutme .short-presentation h1, 
+main section.unfold-aboutme .short-presentation p {
     text-align: center;
 }
+
+main section.unfold-aboutme  .long-presentation {
+    margin-bottom: 20px;
+}
+
+main section.unfold-aboutme  .long-presentation h2 {
+    margin-bottom: 15px;
+}
+
+
+main section.unfold-aboutme  .informations-additional .private{
+    margin-bottom: 50px;
+}
+
+main section.unfold-aboutme  .informations-additional .private ul li {
+    display: flex;
+    align-items: center;
+}
+
+main section.unfold-aboutme  .informations-additional .private ul li:not(:last-child){
+    margin-bottom: 11px;
+}
+
+main section.unfold-aboutme  .informations-additional .private ul li i{
+    font-size: 16px;
+    color: var(--opening-words);
+
+    margin-right: 13px;
+}
+
+main section.unfold-aboutme  .informations-additional .private ul li h3 {
+    margin-right: 5px;
+}
+
+main section.unfold-aboutme .apresentation  .informations-additional .skills ul {
+    list-style: none;
+}
+
+main section.unfold-aboutme .apresentation  .informations-additional .skills ul li:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+main section.unfold-aboutme .apresentation  .informations-additional .skills ul li header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+main section.unfold-aboutme .apresentation  .informations-additional .skills ul li main div {
+    height: 5px;
+}
+
+main section.unfold-aboutme .apresentation  .informations-additional .skills ul li main{
+    position: relative;
+}
+
+main section.unfold-aboutme .apresentation  .informations-additional .skills ul li main .bar-progress {
+    background-color: var(--opening-words);
+    border-radius: 5px;
+
+    position: absolute;
+}
+
+main section.unfold-aboutme .apresentation  .informations-additional .skills ul li main .html {
+    width: 80%;
+}
+
+main section.unfold-aboutme .apresentation  .informations-additional .skills ul li main .css{
+    width: 60%;
+}
+
+main section.unfold-aboutme .apresentation  .informations-additional .skills ul li main .photoshop {
+    width: 50%;
+}
+
+main section.unfold-aboutme .apresentation  .informations-additional .skills ul li main .sketch{
+    width: 90%;
+}
+
+
+main section.unfold-aboutme .apresentation  .informations-additional .skills ul li main .bar-inner {
+    background-color: var(--background-bar-inner);
+    border-radius: 5px;
+}
+
+
 
 @media(min-width: 768px){
     main section.unfold-aboutme {
@@ -17,9 +107,31 @@ main section.unfold-aboutme .apresentation p {
     }
 }
 
-@media(min-width: 1024px){
+@media(min-width: 900px){
     main section.unfold-aboutme {
         padding: 70.5px 47px 0 47px;
+    }
+
+    main section.unfold-aboutme .apresentation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main section.unfold-aboutme .apresentation .short-presentation {
+        width: 693px;
+    }
+
+    main section.unfold-aboutme .apresentation  .informations-additional { 
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    main section.unfold-aboutme .apresentation .informations-additional .private {
+        padding-right: 30px;
+        margin-bottom: 0;
     }
 }
 

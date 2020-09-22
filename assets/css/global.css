@@ -13,12 +13,14 @@
     --background-footer: #152136;
     --background-navbar: #1C2940;
     --background-icons: #DDDDDD;
+    --background-bar-inner: #D9D9D9;
 
     --opening-words: #754EF9;
     --secundary-text: #8A8FA3;
     --main-text: #32333C;
+
 }
-h1, h2, p {
+h1, h2, h3, p {
     
     font-size: 1.5rem;
     line-height: 1.2;
@@ -28,14 +30,21 @@ h1, h2, p {
 h1 {
     font-size: 3.0rem;
     color: var(--opening-words);
+    font-weight: 700;
 }
 
 h2 {
     font-size: 1.8rem;
     color: var(--main-text);
+    font-weight: 500;
 }
 
-p{
+h3 {
+    color: var(--main-text);
+    font-weight: 400;
+}
+
+h3, p{
     line-height: 2.8rem;
 }
 
@@ -52,4 +61,34 @@ body {
 
 .lni{
     color: var(--opening-words);
+}
+
+
+
+@media(min-width: 1024px){
+    h1, h2, h3, p {
+        font-size: 1.6rem;
+    }
+
+    h1 {
+        font-size: 4.5rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media(min-width: 1366px) {
+    h1, h2, h3, p {
+        font-size: 1.7rem;
+    }
+
+    h1 {
+        font-size: 4.7rem;
+    }
+
+    h2 {
+        font-size: 1.9rem;
+    }
 }
