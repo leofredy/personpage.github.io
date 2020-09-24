@@ -1,0 +1,21 @@
+body {
+    position: relative;
+}
+
+.loading {
+    background-color: #FFF;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    z-index: 99;
+}
+
+.loading img {
+    position: absolute;
+    top: calc(50vh - 148px);
+    left: calc(50vw - 148px);
+}
