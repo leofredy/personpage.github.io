@@ -5,9 +5,14 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+.lni {
+    display: block;
+}
+
 :root{
     font-size: 62.5%;
-
+    
     --background-main: #FFF;
     --background-secundary: #BCBCBC;
     --background-footer: #152136;
@@ -18,6 +23,8 @@
     --opening-words: #754EF9;
     --secundary-text: #8A8FA3;
     --main-text: #32333C;
+
+    --border-cards: #ECEFF8;
 
 }
 h1, h2, h3, p {

@@ -1,0 +1,79 @@
+main section.my-services {
+    padding: 0 15px;
+}
+
+main section.my-services .apresentation {
+    text-align: center;
+    margin-bottom: 76px;
+}
+main section.my-services ul {
+    display: grid;
+    row-gap: 30px;
+}
+
+main section.my-services ul li {
+    list-style: none;
+    text-align: center;
+    border: 1px solid var(--border-cards);
+    height: 100%;
+    padding: 15px;
+}
+
+
+main section.my-services ul li i {
+    font-size: 6.0rem;
+    margin-bottom: 17px;
+}
+
+main section.my-services ul li h2 {
+    font-size: 2.2rem;
+    margin-bottom: 17px;
+}
+
+@media(min-width: 768px){
+    main section.my-services {
+        padding: 0 39px;
+    }
+}
+
+@media(min-width: 900px) {
+
+    main section.my-services {
+        padding: 0 47px;
+    }
+
+    main section.my-services ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 25px;
+
+        cursor: pointer;
+    }
+
+    main section.my-services ul li {
+        transition: box-shadow 0.7s ease;
+    }
+
+    main section.my-services ul li:hover {
+        box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23)
+    }
+
+    main section.my-services ul li h2 {
+        transition: color 0.7s ease;
+    }
+
+    main section.my-services ul li h2:hover {
+        color: var(--opening-words);
+    }
+}
+
+@media(min-width: 1366px){
+    main section.my-services {
+        padding: 0 128px;
+    }
+
+    main section.my-services ul {
+        column-gap: 20px;
+    }
+}
