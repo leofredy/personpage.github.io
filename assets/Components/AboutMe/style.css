@@ -1,101 +1,109 @@
-main section.unfold-aboutme {
+main section.about-me {
     padding: 70.5px 15px 0 15px;
     margin-bottom: 140px;
 }
-main section.unfold-aboutme .short-presentation {
-    margin-bottom: 19.5px;
+
+main section.about-me .apresentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-main section.unfold-aboutme .short-presentation h1 {
+main section.about-me .short-presentation {
+    margin-bottom: 40px;
+    max-width: 690px;
+}
+
+main section.about-me .short-presentation h1 {
     margin-bottom: 20px;
 }
 
-main section.unfold-aboutme .short-presentation h1, 
-main section.unfold-aboutme .short-presentation p {
+main section.about-me .short-presentation h1, 
+main section.about-me .short-presentation p {
     text-align: center;
 }
 
-main section.unfold-aboutme  .long-presentation {
+main section.about-me  .long-presentation {
     margin-bottom: 20px;
 }
 
-main section.unfold-aboutme  .long-presentation h2 {
+main section.about-me  .long-presentation h2 {
     margin-bottom: 15px;
 }
 
 
-main section.unfold-aboutme  .informations-additional .private{
+main section.about-me  .informations-additional .private{
     margin-bottom: 50px;
 }
 
-main section.unfold-aboutme  .informations-additional .private ul li {
+main section.about-me  .informations-additional .private ul li {
     display: flex;
     align-items: center;
 }
 
-main section.unfold-aboutme  .informations-additional .private ul li:not(:last-child){
+main section.about-me  .informations-additional .private ul li:not(:last-child){
     margin-bottom: 11px;
 }
 
-main section.unfold-aboutme  .informations-additional .private ul li i{
+main section.about-me  .informations-additional .private ul li i{
     font-size: 16px;
     color: var(--opening-words);
 
     margin-right: 13px;
 }
 
-main section.unfold-aboutme  .informations-additional .private ul li h3 {
+main section.about-me  .informations-additional .private ul li h3 {
     margin-right: 5px;
 }
 
-main section.unfold-aboutme .apresentation  .informations-additional .skills ul {
+main section.about-me .apresentation  .informations-additional .skills ul {
     list-style: none;
 }
 
-main section.unfold-aboutme .apresentation  .informations-additional .skills ul li:not(:last-child) {
+main section.about-me .apresentation  .informations-additional .skills ul li:not(:last-child) {
     margin-bottom: 25px;
 }
 
-main section.unfold-aboutme .apresentation  .informations-additional .skills ul li header {
+main section.about-me .apresentation  .informations-additional .skills ul li header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
 }
 
-main section.unfold-aboutme .apresentation  .informations-additional .skills ul li main div {
+main section.about-me .apresentation  .informations-additional .skills ul li main div {
     height: 5px;
 }
 
-main section.unfold-aboutme .apresentation  .informations-additional .skills ul li main{
+main section.about-me .apresentation  .informations-additional .skills ul li main{
     position: relative;
 }
 
-main section.unfold-aboutme .apresentation  .informations-additional .skills ul li main .bar-progress {
+main section.about-me .apresentation  .informations-additional .skills ul li main .bar-progress {
     background-color: var(--opening-words);
     border-radius: 5px;
 
     position: absolute;
 }
 
-main section.unfold-aboutme .apresentation  .informations-additional .skills ul li main .html {
+main section.about-me .apresentation  .informations-additional .skills ul li main .html {
     width: 80%;
 }
 
-main section.unfold-aboutme .apresentation  .informations-additional .skills ul li main .css{
+main section.about-me .apresentation  .informations-additional .skills ul li main .css{
     width: 60%;
 }
 
-main section.unfold-aboutme .apresentation  .informations-additional .skills ul li main .photoshop {
+main section.about-me .apresentation  .informations-additional .skills ul li main .photoshop {
     width: 50%;
 }
 
-main section.unfold-aboutme .apresentation  .informations-additional .skills ul li main .sketch{
+main section.about-me .apresentation  .informations-additional .skills ul li main .sketch{
     width: 90%;
 }
 
 
-main section.unfold-aboutme .apresentation  .informations-additional .skills ul li main .bar-inner {
+main section.about-me .apresentation  .informations-additional .skills ul li main .bar-inner {
     background-color: var(--background-bar-inner);
     border-radius: 5px;
 }
@@ -103,42 +111,48 @@ main section.unfold-aboutme .apresentation  .informations-additional .skills ul 
 
 
 @media(min-width: 768px){
-    main section.unfold-aboutme {
+    main section.about-me {
         padding: 70.5px 39px 0 39px;
+    }
+
+    main section.about-me .apresentation .informations-additional .private ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
-@media(min-width: 900px){
-    main section.unfold-aboutme {
+@media(min-width: 1024px) {
+    main section.about-me {
         padding: 70.5px 47px 0 47px;
-        margin-bottom: 250px;
     }
 
-    main section.unfold-aboutme .apresentation {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    main section.unfold-aboutme .apresentation .short-presentation {
-        width: 693px;
-    }
-
-    main section.unfold-aboutme .apresentation  .informations-additional { 
-        width: 100%;
+    main section.about-me .apresentation .informations-additional {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        align-items: center;
+        column-gap: 30px;
     }
 
-    main section.unfold-aboutme .apresentation .informations-additional .private {
-        padding-right: 30px;
-        margin-bottom: 0;
+    main section.about-me .apresentation .informations-additional .private ul {
+        grid-template-columns: 1fr;
     }
 }
 
 @media(min-width: 1366px){
-    main section.unfold-aboutme {
+    main section.about-me {
         padding: 70.5px 128px 0 128px;
+    }
+
+    main section.about-me .apresentation .informations-additional {
+        grid-template-columns: 1.5fr 1fr;
+    }
+
+    main section.about-me .apresentation .informations-additional .private ul {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width: 1600px){
+    main section.about-me {
+        padding: 70.5px 230px 0 230px
     }
 }

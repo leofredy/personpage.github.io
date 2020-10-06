@@ -1,10 +1,20 @@
 main section.my-services {
     padding: 0 15px;
+    margin-bottom: 80px;
 }
 
 main section.my-services .apresentation {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 76px;
+}
+main section.my-services .apresentation h1 {
+    margin-bottom: 20px;
+}
+main section.my-services .apresentation p {
+    text-align: center;
+    max-width: 535px;
 }
 main section.my-services ul {
     display: grid;
@@ -19,14 +29,12 @@ main section.my-services ul li {
     padding: 15px;
 }
 
-
 main section.my-services ul li i {
     font-size: 6.0rem;
     margin-bottom: 17px;
 }
 
-main section.my-services ul li h2 {
-    font-size: 2.2rem;
+main section.my-services ul li h5 {
     margin-bottom: 17px;
 }
 
@@ -34,12 +42,26 @@ main section.my-services ul li h2 {
     main section.my-services {
         padding: 0 39px;
     }
+
+    main section.my-services .apresentation p {
+        max-width: 510px;
+    }
+
+    main section.my-services ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
 }
 
 @media(min-width: 900px) {
 
     main section.my-services {
         padding: 0 47px;
+    }
+
+    main section.my-services .apresentation p {
+        max-width: 730px;
     }
 
     main section.my-services ul {
@@ -59,11 +81,11 @@ main section.my-services ul li h2 {
         box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23)
     }
 
-    main section.my-services ul li h2 {
+    main section.my-services ul li h5 {
         transition: color 0.7s ease;
     }
 
-    main section.my-services ul li h2:hover {
+    main section.my-services ul li h5:hover {
         color: var(--opening-words);
     }
 }
@@ -76,4 +98,11 @@ main section.my-services ul li h2 {
     main section.my-services ul {
         column-gap: 20px;
     }
+}
+
+@media(min-width: 1600px){
+    main section.my-services {
+        padding: 0 230px;
+    }
+
 }

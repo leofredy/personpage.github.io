@@ -113,12 +113,14 @@
     .unfold-header .unfold-navigation {
         padding: 30px 128px;
     }
+}
 
-    .unfold-header .unfold-navigation img {
-        width: 165px;
+@media(min-width: 1600px){
+    .unfold-header .unfold-navigation {
+        padding: 30px 230px;
     }
 
-    .unfold-header .unfold-navigation nav .container ul li a {
+    .unfold-header .unfold-navigation nav .container ul li a{
         font-size: 1.7rem;
     }
 }

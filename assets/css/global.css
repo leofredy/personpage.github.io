@@ -23,6 +23,7 @@
     --opening-words: #754EF9;
     --secundary-text: #8A8FA3;
     --main-text: #32333C;
+    --font-buttons: #FFF;
 
     --border-cards: #ECEFF8;
 
@@ -55,11 +56,27 @@ h3, p{
     line-height: 2.8rem;
 }
 
+h4 {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+h5 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--main-text);
+}
+
 a{
     text-decoration: none;
     font-size: 1.6rem;
     font-weight: 500;
     color: var(--secundary-text);
+}
+
+button {
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 body {
@@ -71,9 +88,8 @@ body {
 }
 
 
-
-@media(min-width: 1024px){
-    h1, h2, h3, p {
+@media(min-width: 768px){
+    h3, p {
         font-size: 1.6rem;
     }
 
@@ -86,7 +102,7 @@ body {
     }
 }
 
-@media(min-width: 1366px) {
+@media(min-width: 1600px) {
     h1, h2, h3, p {
         font-size: 1.7rem;
     }
