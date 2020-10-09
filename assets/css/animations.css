@@ -1,0 +1,18 @@
+@keyframes animationDropdown {
+    from {
+        height: 0%;
+    }
+    to {
+        height: 100%;
+    }
+
+}
+
+@keyframes animationDropup {
+    from {
+        height: 100%;
+    }
+    to {
+        height: 0%;
+    }
+}
