@@ -299,5 +299,22 @@
     <script src="./assets/Components/Loading/script.js"></script>
     <script src="./assets/Components/Header/dropdown.js"></script>
     <script src="./assets/Components/Header/Carousel/standbyAnimation.js"></script>
+
+    <script>
+        const viewport = window.innerHeight;
+        const element = document.querySelectorAll('.skills ul li');
+        element.forEach((element, index) => {
+            console.log(element.offsetTop, element, index);
+        });
+
+        window.onscroll = function testing(){
+            console.log(window.scrollY)
+            if ((element[0].offsetTop - viewport + 40) <= window.scrollY) {
+                document.querySelector('body').style.backgroundColor = 'red'
+            } else {
+                document.querySelector('body').style.backgroundColor = '#FFF'
+            }
+        }
+    </script>
 </body>
 </html>
