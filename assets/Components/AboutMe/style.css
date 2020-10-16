@@ -90,9 +90,9 @@ main section.about-me .apresentation  .informations-additional .skills ul li mai
 
 main section.about-me .apresentation  .informations-additional .skills ul li main .bar-progress.animated {
     animation-name: animationSkills;
-    animation-duration: 10s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
-    animation-timing-function: ease;
+    animation-timing-function: linear;
 }
 
 main section.about-me .apresentation  .informations-additional .skills ul li main .html {

@@ -311,17 +311,18 @@
         }
         window.onscroll = animationSkill;
         window.addEventListener('load', animationSkill);
-
+        
+        const number = document.querySelectorAll('.skills ul li header h4');
         function testing(element){
-            const number = document.querySelectorAll('.skills ul li header h4');
             const barInner = document.querySelector('.bar-inner');
-            const oitentaPorc = barInner.offsetWidth * 80 / 100;
-           /* while (element.target.offsetWidth <= oitentaPorc ){
-                console.log(element.target.offsetWidth);
-            }*/
+            let cout = 0;
+            const time = setInterval( () => {
+                const oitentaPorc = element.target.offsetWidth * 100 / barInner.offsetWidth;
+                number[1].innerHTML = `${parseInt(oitentaPorc)}%`;
+            }, 100);
         }
 
-        //elements[0].addEventListener('animationstart', testing);
+        elements[0].addEventListener('animationstart', testing);
     </script>
 </body>
 </html>
