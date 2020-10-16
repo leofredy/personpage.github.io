@@ -16,3 +16,13 @@
         height: 0%;
     }
 }
+
+
+@keyframes animationSkills {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
