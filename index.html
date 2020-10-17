@@ -298,31 +298,7 @@
     </div>
     <script src="./assets/Components/Loading/script.js"></script>
     <script src="./assets/Components/Header/dropdown.js"></script>
-    <script src="./assets/Components/Header/Carousel/standbyAnimation.js"></script>
-
-    <script>
-        const viewport = window.innerHeight;
-        const positionElement = document.querySelectorAll('.skills ul li');
-        const elements = document.querySelectorAll('.skills ul li main .bar-progress');
-        function animationSkill(){
-            positionElement.forEach((element, index) => {
-                element.offsetTop - viewport + 40 <= window.scrollY ? elements[index].classList.add('animated') : undefined;
-            })
-        }
-        window.onscroll = animationSkill;
-        window.addEventListener('load', animationSkill);
-        
-        const number = document.querySelectorAll('.skills ul li header h4');
-        function testing(element){
-            const barInner = document.querySelector('.bar-inner');
-            let cout = 0;
-            const time = setInterval( () => {
-                const oitentaPorc = element.target.offsetWidth * 100 / barInner.offsetWidth;
-                number[1].innerHTML = `${parseInt(oitentaPorc)}%`;
-            }, 100);
-        }
-
-        elements[0].addEventListener('animationstart', testing);
-    </script>
+    <script src="./assets/Components/Header/Carousel/CarouselAnimation.js"></script>
+    <script src="./assets/Components/AboutMe/SkillAnimation.js"></script>
 </body>
 </html>
