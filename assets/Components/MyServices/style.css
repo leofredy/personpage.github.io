@@ -25,8 +25,11 @@ main section.my-services ul li {
     list-style: none;
     text-align: center;
     border: 1px solid var(--border-cards);
+    max-width: 360px;
     height: 100%;
     padding: 15px;
+
+    justify-self: center;
 }
 
 main section.my-services ul li i {

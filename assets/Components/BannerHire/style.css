@@ -4,6 +4,7 @@ main section.banner-hire {
     background-size: cover;
     width: 100%;
     height: 509px;
+    margin-bottom: 70px;
 
     position: relative;
 
@@ -48,16 +49,30 @@ main section.banner-hire .content .buttons .plan {
     height: 50px;
     border: solid 1px var(--font-buttons);
     border-radius: 50px;
+    cursor: pointer;
 }
 
 main section.banner-hire .content .buttons .download {
     color: var(--opening-words);
     margin-bottom: 10px;
+
+    transition: background-color 0.7s ease;
+}
+
+main section.banner-hire .content .buttons .download:hover{
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 main section.banner-hire .content .buttons .hire-me {
     background-color: transparent;
     color: var(--font-buttons);
+
+    transition: background-color 0.7s ease;
+}
+
+main section.banner-hire .content .buttons .hire-me:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: solid 0.1px  rgba(255, 255, 255, 0.5);
 }
 
 @media(min-width: 768px){
