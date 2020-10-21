@@ -84,22 +84,31 @@ main section.about-me .apresentation  .informations-additional .skills ul li mai
     border-radius: 5px;
 
     position: absolute;
+
+    
+}
+
+main section.about-me .apresentation  .informations-additional .skills ul li main .bar-progress.animated {
+    animation-name: animationSkills;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
 }
 
 main section.about-me .apresentation  .informations-additional .skills ul li main .html {
-    width: 80%;
+    max-width: 80%;
 }
 
 main section.about-me .apresentation  .informations-additional .skills ul li main .css{
-    width: 60%;
+    max-width: 60%;
 }
 
 main section.about-me .apresentation  .informations-additional .skills ul li main .photoshop {
-    width: 50%;
+    max-width: 50%;
 }
 
 main section.about-me .apresentation  .informations-additional .skills ul li main .sketch{
-    width: 90%;
+    max-width: 90%;
 }
 
 

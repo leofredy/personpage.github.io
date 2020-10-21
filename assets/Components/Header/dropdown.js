@@ -1,37 +1,36 @@
 class AnimationDropdown {
     constructor(){
-        this.firstAnimation = true;
-        this.nav = document.querySelector('.unfold-header nav');
+        this.navElement = document.querySelector('.unfold-header nav');
         this.navContent = document.querySelector('.unfold-header nav .container');
     }
-
+    
     Animation(event){
-        const element = event.target;
-        const selector = element.classList[1];
-        if (selector === 'lni-menu'){
-            this.Open(element);
+        const switchAnimation = event.target;
+        const switchStyleClass = switchAnimation.classList[1];
+        if (switchStyleClass === 'lni-menu'){
+            this.Open(switchAnimation);
         } else {
-            this.Close(element);
+            this.Close(switchAnimation);
         }
     }
-
-    Open(element){
-        element.classList.remove('lni-menu');
-        element.classList.add('lni-close');
+    
+    Open(switchAnimation){
+        switchAnimation.classList.remove('lni-menu');
+        switchAnimation.classList.add('lni-close');
         this.navContent.classList.remove('closed');
-        this.nav.classList.add('toggle');
-
-        clearTimeout(this.DisappearsNav); 
+        this.navElement.classList.add('toggle');
+        
+        clearTimeout(this.disappearsNavElement); 
     }
-
-    Close(element){
-
-        element.classList.remove('lni-close');
-        element.classList.add('lni-menu');
+    
+    Close(switchAnimation){
+        
+        switchAnimation.classList.remove('lni-close');
+        switchAnimation.classList.add('lni-menu');
         this.navContent.classList.add('closed');
-
-        this.DisappearsNav = setTimeout( () => {
-            this.nav.classList.remove('toggle');
+        
+        this.disappearsNavElement = setTimeout( () => {
+            this.navElement.classList.remove('toggle');
         }, 500)
     }
 }
@@ -41,4 +40,4 @@ const Dropdown = new AnimationDropdown();
 document.querySelector('.lni-menu')
     .addEventListener('click', function(event){
         Dropdown.Animation(event)
-    })
+    });
