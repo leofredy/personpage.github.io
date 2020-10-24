@@ -26,3 +26,40 @@
         width: 100%;
     }
 }
+
+
+@keyframes LeftToRight {
+    from {
+       margin-left: 0;
+    }
+    to {
+        margin-left: calc(100% - 50px);
+    }
+}
+
+
+
+@keyframes RightToLeft {
+    from {
+        justify-self: end;
+        margin-right: 0;
+    }
+    to {
+        justify-self: end;
+        margin-right: calc(100% - 50px);
+    }
+}
+
+
+@keyframes TopToLow {
+    from {
+        height: 90px;
+
+        opacity: 0;
+    }
+    to {
+        height: 50px;
+
+        opacity: 1;
+    }
+}

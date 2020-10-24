@@ -2,12 +2,12 @@ section.my-recent-works {
     padding: 0 15px;
 }
 
-section.my-recent-works div {
+section.my-recent-works .apresentation {
     max-width: 610px;
     margin-bottom: 50px;
 }
 
-section.my-recent-works div h1 {
+section.my-recent-works .apresentation h1 {
     margin-bottom: 20px;
 }
 
@@ -27,8 +27,104 @@ section.my-recent-works li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    position: relative;
 }
 
+section.my-recent-works li > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: var(--background-modal);
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px;
+    align-items: flex-end;
+    justify-content: center;
+
+    display: none;
+    opacity: 0;
+}
+
+section.my-recent-works li > div.modal {
+    display: grid;
+    opacity: 1;
+
+    transition: opacity 0.7s ease;
+}
+
+section.my-recent-works li .modal .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.my-recent-works li .modal .title h5 {
+    color: var(--background-main);
+    margin-bottom: 15px;
+
+    
+    height: 170px;
+
+    animation-name: TopToLow;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+section.my-recent-works li .modal .title div {
+    width: 60px;
+    height: 2px;
+
+    background-color: var(--background-main);
+}
+
+section.my-recent-works li .modal .icons {
+    width: 360px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+
+    align-self: flex-start;
+
+
+    /*animation*/
+    position: relative;
+}
+
+section.my-recent-works li .modal .icons div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--background-main);
+    border-radius: 50%;
+}
+
+section.my-recent-works li .modal .icons div:first-child {
+    animation-name: LeftToRight;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+section.my-recent-works li .modal .icons div:not(:first-child){
+    animation-name: RightToLeft;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+section.my-recent-works li .modal .icons div i {
+    font-size: 25px;
+    color: var(--background-main);
+}
 
 @media(min-width: 768px){
     section.my-recent-works {
@@ -56,7 +152,7 @@ section.my-recent-works li {
         padding: 0 128px;
     }
 
-    section.my-recent-works div {
+    section.my-recent-works .apresentation {
         max-width: 710px;
     }
 }
