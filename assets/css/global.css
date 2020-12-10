@@ -68,6 +68,12 @@ h5 {
     color: var(--main-text);
 }
 
+h6 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--background-main);
+}
+
 a{
     text-decoration: none;
     font-size: 1.6rem;
@@ -82,6 +88,7 @@ button {
 
 body {
     background-color: var(--background-main);
+    position: relative;
 }
 
 .lni{

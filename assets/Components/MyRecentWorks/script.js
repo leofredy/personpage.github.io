@@ -1,25 +1,19 @@
-const elementWorks = document.querySelectorAll('section.my-recent-works ul li');
+import CardEvents from './CardEvents.js';
+import PopupWork from './JobViewer/script.js';
 
-elementWorks.forEach(elementWork => {
-    elementWork.addEventListener('mouseenter', watchOverWork);
-    elementWork.addEventListener('mouseleave', watchLeaveWork);
+CardEvents.elementWorks.forEach(elementWork => {
+
+    const triggersBoxPosition = elementWork.children.length - 1;
+    const triggerPopUpCard = elementWork
+                                .children[triggersBoxPosition]
+                                .children[1]
+                                .children[0];
+
+    elementWork.addEventListener('mouseenter', CardEvents.moreOptions);
+    elementWork.addEventListener('mouseleave', CardEvents.leaveOptions);
+    triggerPopUpCard.addEventListener('click', PopupWork);
 });
 
-window.addEventListener('load', handleWidthWork);
-window.addEventListener('resize', handleWidthWork);
+window.addEventListener('load', CardEvents.handleCardSize);
+window.addEventListener('resize', CardEvents.handleCardSize);
 
-function handleWidthWork(){
-
-    elementWorks.forEach(elementWork => {
-        elementWork.style.height = `${elementWork.offsetWidth}px`;
-        elementWork.children[0].innerHTML = `${elementWork.offsetWidth} x ${elementWork.offsetHeight}`;
-        elementWork.children[1].children[1].style.width = `${elementWork.offsetWidth}px`;
-    });
-}
-
-function watchOverWork(event){
-    event.target.children[1].classList.add('modal');
-}
-function watchLeaveWork(event){
-    event.target.children[1].classList.remove('modal');
-}
