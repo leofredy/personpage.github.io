@@ -1,4 +1,4 @@
-body .PopupWorkImage {
+.PopupWorkImage {
     position: fixed;
     top: 0;
     width: 100%;
@@ -12,7 +12,7 @@ body .PopupWorkImage {
     z-index: 99;
 }
 
-body .PopupWorkImage div {
+.PopupWorkImage div {
     align-self: flex-start;
 
     display: flex;
@@ -22,13 +22,13 @@ body .PopupWorkImage div {
     align-items: center;
 }
 
-body .PopupWorkImage div i {
+.PopupWorkImage div i {
     font-size: 20px;
     color: var(--background-main);
     
 }
 
-body .PopupWorkImage ul {
+.PopupWorkImage ul {
     width: 100%;
     display: flex;
     overflow-x: auto;
@@ -38,7 +38,7 @@ body .PopupWorkImage ul {
     position: absolute;
 }
 
-body .PopupWorkImage ul img {
+.PopupWorkImage ul img {
     width: 100%;
     object-fit: cover;
     flex: none;

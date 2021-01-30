@@ -1,23 +1,23 @@
-section.my-recent-works {
-    padding: 0 15px;
+.my-recent-works {
+    width: calc(100vw - 5%);
 }
 
-section.my-recent-works .apresentation {
+.my-recent-works .apresentation {
     max-width: 610px;
     margin-bottom: 50px;
 }
 
-section.my-recent-works .apresentation h1 {
+.my-recent-works .apresentation h1 {
     margin-bottom: 20px;
 }
 
-section.my-recent-works ul {
+.my-recent-works ul {
     list-style: none;
     display: grid;
     row-gap: 30px;
 }
 
-section.my-recent-works li {
+.my-recent-works li {
     width: 100%;
     max-width: 360px;
     background-color: var(--background-secundary);
@@ -31,17 +31,17 @@ section.my-recent-works li {
     position: relative;
 }
 
-section.my-recent-works li > img {
+.my-recent-works li > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-section.my-recent-works li > img:not(:first-child){
+.my-recent-works li > img:not(:first-child){
     display: none;
 }
 
-section.my-recent-works li > div {
+.my-recent-works li > div {
     position: absolute;
     top: 0;
     left: 0;
@@ -60,20 +60,20 @@ section.my-recent-works li > div {
     opacity: 0;
 }
 
-section.my-recent-works li > div.modal {
+.my-recent-works li > div.modal {
     display: grid;
     opacity: 1;
 
     transition: opacity 0.7s ease;
 }
 
-section.my-recent-works li .modal .title {
+.my-recent-works li .modal .title {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-section.my-recent-works li .modal .title h5 {
+.my-recent-works li .modal .title h5 {
     color: var(--background-main);
     margin-bottom: 15px;
 
@@ -86,14 +86,14 @@ section.my-recent-works li .modal .title h5 {
     animation-fill-mode: forwards;
 }
 
-section.my-recent-works li .modal .title div {
+.my-recent-works li .modal .title div {
     width: 60px;
     height: 2px;
 
     background-color: var(--background-main);
 }
 
-section.my-recent-works li .modal .icons {
+.my-recent-works li .modal .icons {
     width: 360px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -106,7 +106,7 @@ section.my-recent-works li .modal .icons {
     position: relative;
 }
 
-section.my-recent-works li .modal .icons div {
+.my-recent-works li .modal .icons div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,62 +120,54 @@ section.my-recent-works li .modal .icons div {
     transition: background-color 0.5s ease;
 }
 
-section.my-recent-works li .modal .icons div:hover {
+.my-recent-works li .modal .icons div:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-section.my-recent-works li .modal .icons div:first-child {
+.my-recent-works li .modal .icons div:first-child {
     animation-name: LeftToRight;
     animation-duration: 0.7s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
 }
 
-section.my-recent-works li .modal .icons div:not(:first-child){
+.my-recent-works li .modal .icons div:not(:first-child){
     animation-name: RightToLeft;
     animation-duration: 0.7s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
 }
 
-section.my-recent-works li .modal .icons div i {
+.my-recent-works li .modal .icons div i {
     font-size: 25px;
     color: var(--background-main);
 }
 
 @media(min-width: 768px){
-    section.my-recent-works {
-        padding: 0 39px;
+    .my-recent-works {
+        display: flex;
+        flex-direction: column;
     }
-
-    section.my-recent-works ul{
+    .my-recent-works ul{
         grid-template-columns: 1fr 1fr;
         column-gap: 30px;
+        max-width: 750px;
+        align-self: center;
     }
 }
 
-@media(min-width: 1024px){
-    section.my-recent-works {
-        padding: 0 47px;
+@media(min-width: 1280px){
+    .my-recent-works .apresentation {
+        max-width: 710px;
     }
-
-    section.my-recent-works ul {
+    .my-recent-works ul {
         grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1144px;
     }
 }
 
 @media(min-width: 1366px){
-    section.my-recent-works {
-        padding: 0 128px;
-    }
-
-    section.my-recent-works .apresentation {
-        max-width: 710px;
-    }
-}
-
-@media(min-width: 1600px){
-    section.my-recent-works {
-        padding: 0 230px;
+    .my-recent-works {
+        width: 1280px;
     }
 }

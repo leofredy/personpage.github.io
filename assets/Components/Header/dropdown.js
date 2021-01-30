@@ -1,7 +1,7 @@
 class AnimationDropdown {
     constructor(){
         this.navElement = document.querySelector('.unfold-header nav');
-        this.navContent = document.querySelector('.unfold-header nav .container');
+        this.navContent = document.querySelector('.unfold-header nav > div');
     }
     
     Animation(event){

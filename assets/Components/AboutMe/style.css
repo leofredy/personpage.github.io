@@ -1,118 +1,115 @@
-main section.about-me {
-    padding: 70.5px 15px 0 15px;
-    margin-bottom: 140px;
+.about-me {
+    max-width: calc(100vw - 5%);
+    margin-bottom: 80px;
 }
 
-main section.about-me .apresentation {
+.about-me .apresentation {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-main section.about-me .short-presentation {
+.about-me .short-presentation {
     margin-bottom: 40px;
     max-width: 690px;
 }
 
-main section.about-me .short-presentation h1 {
+.about-me .short-presentation h1 {
     margin-bottom: 20px;
 }
 
-main section.about-me .short-presentation h1, 
-main section.about-me .short-presentation p {
+.about-me .short-presentation h1, 
+.about-me .short-presentation p {
     text-align: center;
 }
 
-main section.about-me  .long-presentation {
+ .about-me .long-presentation {
     margin-bottom: 20px;
 }
 
-main section.about-me  .long-presentation h2 {
+ .about-me .long-presentation h2 {
     margin-bottom: 15px;
 }
 
 
-main section.about-me  .informations-additional .private{
+.about-me .private{
     margin-bottom: 50px;
 }
 
-main section.about-me  .informations-additional .private ul li {
+.about-me .private ul li {
     display: flex;
     align-items: center;
 }
 
-main section.about-me  .informations-additional .private ul li:not(:last-child){
+.about-me .private ul li:not(:last-child){
     margin-bottom: 11px;
 }
 
-main section.about-me  .informations-additional .private ul li i{
+.about-me .private ul li i{
     font-size: 16px;
     color: var(--opening-words);
 
     margin-right: 13px;
 }
 
-main section.about-me  .informations-additional .private ul li h3 {
+.about-me .private ul li h3 {
     margin-right: 5px;
 }
 
-main section.about-me .apresentation  .informations-additional .skills ul {
+.about-me .skills ul {
     list-style: none;
 }
 
-main section.about-me .apresentation  .informations-additional .skills ul li:not(:last-child) {
+.about-me .skills ul li:not(:last-child) {
     margin-bottom: 25px;
 }
 
-main section.about-me .apresentation  .informations-additional .skills ul li header {
+.about-me .skills ul li header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
 }
 
-main section.about-me .apresentation  .informations-additional .skills ul li main div {
+.about-me .skills ul li main div {
     height: 5px;
 }
 
-main section.about-me .apresentation  .informations-additional .skills ul li main{
+.about-me .skills ul li main{
     position: relative;
 }
 
-main section.about-me .apresentation  .informations-additional .skills ul li main .bar-progress {
+.about-me .skills ul li main .bar-progress {
     background-color: var(--opening-words);
     border-radius: 5px;
 
     position: absolute;
-
-    
 }
 
-main section.about-me .apresentation  .informations-additional .skills ul li main .bar-progress.animated {
+.about-me .skills ul li main .bar-progress.animated {
     animation-name: animationSkills;
-    animation-duration: 2s;
+    animation-duration: 4s;
     animation-fill-mode: forwards;
-    animation-timing-function: linear;
+    animation-timing-function: ease;
 }
 
-main section.about-me .apresentation  .informations-additional .skills ul li main .html {
+.about-me .skills ul li main .html {
     max-width: 80%;
 }
 
-main section.about-me .apresentation  .informations-additional .skills ul li main .css{
+.about-me .skills ul li main .css{
     max-width: 60%;
 }
 
-main section.about-me .apresentation  .informations-additional .skills ul li main .photoshop {
+.about-me .skills ul li main .photoshop {
     max-width: 50%;
 }
 
-main section.about-me .apresentation  .informations-additional .skills ul li main .sketch{
+.about-me .skills ul li main .sketch{
     max-width: 90%;
 }
 
-
-main section.about-me .apresentation  .informations-additional .skills ul li main .bar-inner {
+.about-me .skills ul li main .bar-inner {
     background-color: var(--background-bar-inner);
     border-radius: 5px;
 }
@@ -120,48 +117,34 @@ main section.about-me .apresentation  .informations-additional .skills ul li mai
 
 
 @media(min-width: 768px){
-    main section.about-me {
-        padding: 70.5px 39px 0 39px;
-    }
-
-    main section.about-me .apresentation .informations-additional .private ul {
+    .about-me .private ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media(min-width: 1024px) {
-    main section.about-me {
-        padding: 70.5px 47px 0 47px;
-    }
-
-    main section.about-me .apresentation .informations-additional {
+    .about-me .informations-additional {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 30px;
     }
 
-    main section.about-me .apresentation .informations-additional .private ul {
+    .about-me .private ul {
         grid-template-columns: 1fr;
     }
 }
 
 @media(min-width: 1366px){
-    main section.about-me {
-        padding: 70.5px 128px 0 128px;
+    .about-me {
+        max-width: 1280px;
     }
 
-    main section.about-me .apresentation .informations-additional {
+    .about-me .informations-additional {
         grid-template-columns: 1.5fr 1fr;
     }
 
-    main section.about-me .apresentation .informations-additional .private ul {
+    .about-me .private ul {
         grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media(min-width: 1600px){
-    main section.about-me {
-        padding: 70.5px 230px 0 230px
     }
 }
