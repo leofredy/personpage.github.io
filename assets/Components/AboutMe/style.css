@@ -1,6 +1,6 @@
 .about-me {
-    max-width: calc(100vw - 5%);
-    margin-bottom: 80px;
+    max-width: 1280px;
+    margin: 0 auto 80px auto;
 }
 
 .about-me .apresentation {
@@ -47,7 +47,7 @@
 
 .about-me .private ul li i{
     font-size: 16px;
-    color: var(--opening-words);
+    color: var(--color-details);
 
     margin-right: 13px;
 }
@@ -80,7 +80,7 @@
 }
 
 .about-me .skills ul li main .bar-progress {
-    background-color: var(--opening-words);
+    background-color: var(--color-details);
     border-radius: 5px;
 
     position: absolute;
@@ -136,10 +136,6 @@
 }
 
 @media(min-width: 1366px){
-    .about-me {
-        max-width: 1280px;
-    }
-
     .about-me .informations-additional {
         grid-template-columns: 1.5fr 1fr;
     }

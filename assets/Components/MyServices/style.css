@@ -1,6 +1,7 @@
 .my-services {
     margin-bottom: 80px;
-    max-width: calc(100vw - 5%);
+    max-width: 1280px;
+    margin: 0 auto 80px auto;
 }
 
 .my-services .apresentation {
@@ -19,7 +20,7 @@
 .my-services ul {
     display: grid;
     row-gap: 30px;
-    max-width: 1122px;
+    margin: 0 auto;
 }
 
 .my-services ul li {
@@ -29,8 +30,13 @@
     max-width: 360px;
     height: 100%;
     padding: 15px;
-
+    transition: box-shadow 0.7s ease;
     justify-self: center;
+    cursor: pointer;
+}
+
+.my-services ul li:hover {
+    box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23)
 }
 
 .my-services ul li i {
@@ -40,6 +46,11 @@
 
 .my-services ul li h5 {
     margin-bottom: 17px;
+    transition: color 0.7s ease;
+}
+
+.my-services ul li h5:hover {
+    color: var(--opening-words);
 }
 
 @media(min-width: 768px){
@@ -51,6 +62,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 30px;
+        max-width: 750px;
     }
 }
 
@@ -58,41 +70,11 @@
     .my-services .apresentation p {
         max-width: 730px;
     }
-
-    .my-services ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        
-        gap: 25px;
-
-        cursor: pointer;
-    }
-
-    .my-services ul li {
-        transition: box-shadow 0.7s ease;
-    }
-
-    .my-services ul li:hover {
-        box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23)
-    }
-
-    .my-services ul li h5 {
-        transition: color 0.7s ease;
-    }
-
-    .my-services ul li h5:hover {
-        color: var(--opening-words);
-    }
 }
 
 @media(min-width: 1280px){
     .my-services ul {
         grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
-@media(min-width: 1366px){
-    .my-services ul {
-        column-gap: 20px;
+        max-width: 1122px;
     }
 }

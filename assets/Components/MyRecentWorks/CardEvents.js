@@ -13,16 +13,6 @@ const CardEvents = {
             elementWork.children[triggersBoxPosition].children[1].style.width = `${elementWork.offsetWidth}px`;
         });
     },
-
-    moreOptions(event){
-        const positionOptions = event.target.children.length - 1;
-        event.target.children[positionOptions].classList.add('modal');
-    },
-
-    leaveOptions(event){
-        const positionOptions = event.target.children.length - 1;
-        event.target.children[positionOptions].classList.remove('modal');
-    }
 }
 
 export default CardEvents;

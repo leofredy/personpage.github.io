@@ -23,38 +23,33 @@
 <body>
     <header class="unfold-header">
         <div class="container">
-            <div class="unfold-navigation">
+            <nav class="unfold-navigation">
                 <a class="logo" href="">
                     <img src="./assets/img/logo.png" alt="Unfold" class="unfold-logo">
                 </a>
-                <button>
-                    <i class="lni lni-menu"></i>
-                </button>
-                <nav>
-                    <div>
-                        <ul>
-                            <li>
-                                <a href="">HOME</a>
-                            </li>
-                            <li>
-                                <a href="">ABOUT</a> 
-                            </li>
-                            <li>
-                                <a href="">SERVICES</a>
-                            </li>
-                            <li>
-                                <a href="">PORTFOLIO</a>
-                            </li>
-                            <li>
-                                <a href="">BLOG</a>
-                            </li>
-                            <li>
-                                <a href="">CONTACT</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+                <input id="btn-menu" type="checkbox">
+                <label class="hamburguer" for="btn-menu"></label>
+                <ul class="menu">
+                    <li>
+                        <a href="">HOME</a>
+                    </li>
+                    <li>
+                        <a href="">ABOUT</a> 
+                    </li>
+                    <li>
+                        <a href="">SERVICES</a>
+                    </li>
+                    <li>
+                        <a href="">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <a href="">BLOG</a>
+                    </li>
+                    <li>
+                        <a href="">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
 
         <div class="carousel">
@@ -77,8 +72,8 @@
         </div>
 
     </header>
-    <main class="container">
-        <section class="about-me">
+    <main>
+        <section class="about-me container">
             <div class="apresentation">
                 <div class="short-presentation">
                     <h1>
@@ -194,7 +189,7 @@
             </div>
         </section>
 
-        <section class="my-services">
+        <section class="my-services container">
             <div class="apresentation">
                 <h1>
                     My Services
@@ -430,15 +425,21 @@
         </p>
         <ul class="redes-sociais">
             <li>
-                <i class="lni lni-facebook-filled"></i>
+                <a href="#" target="_blank">
+                    <i class="lni lni-facebook-filled"></i>
+                </a>
             </li>
 
             <li>
-                <i class="lni lni-twitter-original"></i>
+                <a href="" target="_blank">
+                    <i class="lni lni-twitter-original"></i>
+                </a>
             </li>
 
             <li>
-                <i class="lni lni-github-original"></i>
+                <a href="https://github.com/leofredy" target="_blank">
+                    <i class="lni lni-github-original"></i>
+                </a>
             </li>
         </ul>
         <div class="logo-marca">

@@ -18,47 +18,46 @@
     --background-bar-inner: #D9D9D9;
     --background-modal: #754ef9cc;
 
-    --opening-words: #754EF9;
-    --secundary-text: #8A8FA3;
-    --main-text: #32333C;
-    --font-buttons: #FFF;
-    --font-footer-span: #007BFF;
-
+    --text-title: #000;
+    --text-subtitles: #32333C;
+    --text-paragraphs: #8A8FA3;
+    --text-footer-span: #007BFF;
+    
     --border-cards: #ECEFF8;
+    
+    --color-details: #754EF9;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 0px 20px;
 }
 
 .lni {
     display: block;
-    color: var(--opening-words);
+    color: var(--color-details);
 }
 
-h1, h2, h3, p {
+h1, h2, h3, p, a {
     
     font-size: 1.5rem;
     line-height: 1.2;
-    color: var(--secundary-text);
+    color: var(--text-paragraphs);
 }
 
 h1 {
     font-size: 3.0rem;
-    color: var(--opening-words);
+    color: var(--text-title);
     font-weight: 700;
 }
 
 h2 {
     font-size: 1.8rem;
-    color: var(--main-text);
+    color: var(--text-subtitles);
     font-weight: 500;
 }
 
 h3 {
-    color: var(--main-text);
+    color: var(--text-subtitles);
     font-weight: 400;
 }
 
@@ -74,7 +73,7 @@ h4 {
 h5 {
     font-size: 2.2rem;
     font-weight: 600;
-    color: var(--main-text);
+    color: var(--text-subtitles);
 }
 
 h6 {
@@ -87,7 +86,6 @@ a{
     text-decoration: none;
     font-size: 1.6rem;
     font-weight: 500;
-    color: var(--secundary-text);
 }
 
 button {

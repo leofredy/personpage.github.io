@@ -1,7 +1,7 @@
 .carousel{
     display: flex;
     flex-direction: column;
-    padding-top: 115px;
+    padding-top: 111px;
 
     position: relative;
 }

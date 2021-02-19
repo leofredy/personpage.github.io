@@ -9,8 +9,7 @@ CardEvents.elementWorks.forEach(elementWork => {
                                 .children[1]
                                 .children[0];
 
-    elementWork.addEventListener('mouseenter', CardEvents.moreOptions);
-    elementWork.addEventListener('mouseleave', CardEvents.leaveOptions);
+    
     triggerPopUpCard.addEventListener('click', PopupWork);
 });
 

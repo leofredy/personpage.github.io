@@ -14,7 +14,8 @@ footer img {
 footer > p {
     text-align: center;
     min-width: 312px;
-    max-width: 600px;
+    max-width: 750px;
+    padding: 0 30px;
     margin-bottom: 35px;
 }
 
@@ -27,7 +28,7 @@ footer ul {
     margin-bottom: 80px;
 }
 
-footer ul li {
+footer ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,13 +36,21 @@ footer ul li {
     height: 50px;
     background-color: var(--background-footer-secundary);
     border-radius: 50%;
+    transition: transform 0.6s ease, background 1s;
+    
+    cursor: pointer;
 }
 
 footer ul li:nth-child(2){
     margin: 0 14px;
 }
 
-footer ul li .lni {
+footer ul li a:hover {
+    transform: scale(1.2);
+    background-color: var(--color-details);
+}
+
+footer ul li a .lni {
     color: var(--background-main);
     font-size: 20px;
 }
@@ -58,5 +67,5 @@ footer .logo-marca {
 
 footer span {
     font-size: 1.5rem;
-    color: var(--font-footer-span);
+    color: var(--text-footer-span);
 }

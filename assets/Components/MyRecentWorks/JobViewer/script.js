@@ -1,10 +1,10 @@
 function popUpCards({ path }){
     const elementBody = document.querySelector('body');
-    const elementHtml = document.querySelector('html');
-    
+
+    document.querySelector('html').style.overflow = 'hidden';
 
     let listContent;
-    
+
     if (path.length === 11){
         listContent = getContent(path[3]);
     } else if (path.length === 12){
@@ -13,8 +13,6 @@ function popUpCards({ path }){
         return null;
     } 
 
-    elementHtml.style.overflow = 'hidden';
-    
     const JobViewer = CreateJobViewer('PopupWorkImage', listContent);
     JobViewer.addEventListener('click', popCloseCards, false);
     
@@ -40,7 +38,7 @@ function popCloseCards(event){
 
 function CreateJobViewer(classList, contents){
     const Viewer = document.createElement('div');
-    Viewer.classList.add(classList)
+    Viewer.classList.add(classList);
     Viewer.innerHTML = `
         <div>
             <i class="lni lni-close"></i>
@@ -52,7 +50,7 @@ function CreateJobViewer(classList, contents){
         <ul>
         
         </ul>
-    `
+    `;
     contents.forEach( content => {
         if (content.toString() !== document.createElement('img').toString()){
            Viewer.children[1]

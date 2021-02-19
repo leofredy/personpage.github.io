@@ -3,11 +3,10 @@
 }
 
 .unfold-header > .container {
-    justify-content: center;
     position: fixed;
     z-index: 99;
-    width: 100vw;
-    height: 115px;
+    width: 100%;
+    padding: 30px 0;
     background-color: var(--background-main);
     box-shadow: 0px 0px 24px 0px rgba(134, 134, 134, 0.25);
 }
@@ -15,120 +14,141 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100vw;
-    max-width: calc(100vw - 5%);
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .unfold-header .logo {
     height: 50px;
 }
 
-.unfold-navigation button {
-    border: none;
-}
-
-.unfold-navigation button .lni-menu,
-.unfold-navigation button .lni-close {
-    font-size: 32px;
-    background-color: var(--background-main);
-}
-
-.unfold-navigation nav {
+#btn-menu {
     display: none;
 }
-
-.unfold-navigation nav > div {
-    width: 100%;
-    
-    padding: 3px 12px;
-    background-color: var(--background-main);
-    box-shadow: 0px 0px 10px rgba(000, 000, 000, 0.1);
-    overflow: hidden;
-
-    animation-name: animationDropdown;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
+.hamburguer {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
 }
-
-.unfold-navigation nav > div.closed {
-    animation-name: animationDropup;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: linear;
-}
-
-
-.unfold-navigation nav.toggle {
-    display: block;
+.hamburguer::after, 
+.hamburguer::before {
+    content: '';
+    background-color: var(--color-details);
     width: 100%;
-    height: 184px;
-    padding: 0 15px;
-    
-    
+    height: 3px;
+
     position: absolute;
-    top: 130px;
-    left: 0;
+    top: 8.5px;
+
+    transition: 0.7s ease;
 }
 
-.unfold-navigation nav ul {
-    list-style-type: none;
+.unfold-navigation .hamburguer::before {
+    top: 18.5px;
 }
 
-.unfold-navigation nav ul li {
-    margin: 4px 0;
+#btn-menu:checked + .hamburguer::after, 
+#btn-menu:checked + .hamburguer::before {
+    background-color: #fff;
+    top: 50%;
 }
 
-.unfold-navigation nav ul li a {
-    transition: color 0.8s ease;
+#btn-menu:checked + .hamburguer::after {
+    transform: rotate(225deg);
 }
 
-.unfold-navigation nav ul li a:hover{
-    color: var(--opening-words);
+#btn-menu:checked + .hamburguer::before {
+    transform: rotate(-225deg);
 }
 
-@media(min-width: 768px){
-    .unfold-navigation nav.toggle {
-        padding: 0 39px;
-    }
+.unfold-navigation .menu {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 65%;
+    max-width: 250px;
+    height: 100vh;
+    background-color: var(--color-details);
+    padding-top: 88px;
+    transition: 0.7s ease;
+}
+
+.menu.active {
+    right: 0%;
+}
+
+.unfold-navigation .menu li {
+    
+}
+
+.unfold-navigation .menu li a{
+    display: block;
+    text-align: center;
+    transition: 0.7s ease;
+    color: var(--background-secundary);
+    position: relative;
+    padding: 10px 10px;
+}
+
+.unfold-navigation .menu li:hover > a{
+    color: var(--background-main);
+    transform: scale(1.09);
+}
+
+.unfold-navigation .menu li > a::after {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    background-color: var(--background-main);
+    width: 0px;
+    height: 2px;
+    transition: 0.7s ease;
+}
+
+.unfold-navigation .menu li:hover > a::after {
+    left: calc(50% - 60px);
+    width: 120px;
 }
 
 /*Muda navbar*/
 @media(min-width: 1280px){
-    .unfold-navigation button {
+    .unfold-navigation .hamburguer {
         display: none;
     }
-
-    .unfold-navigation nav.toggle {
-        position: static;
-        width: auto;
-        padding: 0;
-    }
-    
-    .unfold-navigation nav {
-        display: block;
-    }
-
-    .unfold-navigation nav > div {
-        padding: 0;
-        box-shadow: none;
-    }
-
-    .unfold-navigation nav > div ul {
+    .unfold-navigation .menu {
         display: flex;
+        padding: 0;
+        position: static;
+        width: unset;
+        height: unset;
+        max-width: unset;
+        background-color: unset;
     }
-
-    .unfold-navigation nav > div ul li:not(:first-child) {
-        margin-left: 30px;
-    }  
-
-}
-
-@media(min-width: 1366px){
-    .unfold-navigation {
-        max-width: 1280px;
+    .unfold-navigation .menu li a {
+        padding: 16px 24px;
+        color: var(--text-paragraphs);
     }
-    .unfold-navigation nav > div ul li a{
-        font-size: 1.7rem;
+    .unfold-navigation .menu li:hover > a {
+        color: var(--color-details);
+    }
+    .unfold-navigation .menu li > a::after {
+        content: '';
+        position: absolute;
+        top: -31px;
+        left: 50%;
+        background: linear-gradient(45deg, var(--color-details), #0000);
+        width: 2px;
+        height: 0px;
+        transition: 0.7s ease;
+    }
+    .unfold-navigation .menu li:hover > a::after {
+        left: 50%;
+        width: 2px;
+        height: 38px;
     }
 }

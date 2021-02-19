@@ -1,5 +1,8 @@
 .my-recent-works {
-    width: calc(100vw - 5%);
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .my-recent-works .apresentation {
@@ -15,6 +18,7 @@
     list-style: none;
     display: grid;
     row-gap: 30px;
+    margin: 0 auto;
 }
 
 .my-recent-works li {
@@ -30,6 +34,7 @@
 
     position: relative;
 }
+
 
 .my-recent-works li > img {
     width: 100%;
@@ -47,38 +52,36 @@
     left: 0;
     right: 0;
     bottom: 0;
-
+    
     background-color: var(--background-modal);
-
-    display: grid;
+    
     grid-template-rows: 1fr 1fr;
     row-gap: 20px;
     align-items: flex-end;
     justify-content: center;
-
+    
     display: none;
     opacity: 0;
 }
 
-.my-recent-works li > div.modal {
+.my-recent-works li:hover > div {
     display: grid;
     opacity: 1;
 
     transition: opacity 0.7s ease;
 }
 
-.my-recent-works li .modal .title {
+
+.my-recent-works li  .title {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.my-recent-works li .modal .title h5 {
+.my-recent-works li .title h5 {
     color: var(--background-main);
-    margin-bottom: 15px;
-
-    
-    height: 170px;
+    font-weight: 400;    
+    line-height: 2;
 
     animation-name: TopToLow;
     animation-duration: 0.7s;
@@ -86,14 +89,14 @@
     animation-fill-mode: forwards;
 }
 
-.my-recent-works li .modal .title div {
+.my-recent-works li .title div {
     width: 60px;
     height: 2px;
 
     background-color: var(--background-main);
 }
 
-.my-recent-works li .modal .icons {
+.my-recent-works li .icons {
     width: 360px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -106,7 +109,7 @@
     position: relative;
 }
 
-.my-recent-works li .modal .icons div {
+.my-recent-works li .icons div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,34 +123,30 @@
     transition: background-color 0.5s ease;
 }
 
-.my-recent-works li .modal .icons div:hover {
+.my-recent-works li .icons div:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-.my-recent-works li .modal .icons div:first-child {
+.my-recent-works li .icons div:first-child {
     animation-name: LeftToRight;
     animation-duration: 0.7s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
 }
 
-.my-recent-works li .modal .icons div:not(:first-child){
+.my-recent-works li .icons div:not(:first-child){
     animation-name: RightToLeft;
     animation-duration: 0.7s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
 }
 
-.my-recent-works li .modal .icons div i {
+.my-recent-works li .icons div i {
     font-size: 25px;
     color: var(--background-main);
 }
 
 @media(min-width: 768px){
-    .my-recent-works {
-        display: flex;
-        flex-direction: column;
-    }
     .my-recent-works ul{
         grid-template-columns: 1fr 1fr;
         column-gap: 30px;
@@ -163,11 +162,5 @@
     .my-recent-works ul {
         grid-template-columns: 1fr 1fr 1fr;
         max-width: 1144px;
-    }
-}
-
-@media(min-width: 1366px){
-    .my-recent-works {
-        width: 1280px;
     }
 }

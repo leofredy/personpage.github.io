@@ -35,7 +35,7 @@
 
 
 .banner-hire .content h1, .banner-hire .content p { 
-    color: var(--font-buttons);
+    color: var(--background-main);
     margin-bottom: 35px;
 }
 
@@ -47,13 +47,13 @@
 .banner-hire .content .buttons .plan {
     width: 180px;
     height: 50px;
-    border: solid 1px var(--font-buttons);
+    border: solid 1px var(--background-main);
     border-radius: 50px;
     cursor: pointer;
 }
 
 .banner-hire .content .buttons .download {
-    color: var(--opening-words);
+    color: var(--color-details);
     margin-bottom: 10px;
 
     transition: background-color 0.7s ease;
@@ -65,7 +65,7 @@
 
 .banner-hire .content .buttons .hire-me {
     background-color: transparent;
-    color: var(--font-buttons);
+    color: var(--background-main);
 
     transition: background-color 0.7s ease;
 }
