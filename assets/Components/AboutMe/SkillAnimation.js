@@ -1,12 +1,18 @@
 const viewport = window.innerHeight;
 const barsProgress = document.querySelectorAll('.skills ul li main .bar-progress');    
+const HEIGHT_HEADER = 111;
 
-function ProgressAnimation(){
+function observeVisibleElementScreen(){
     const scrollMouse = window.scrollY;
-
+    
     barsProgress.forEach((barProgress) => {
         const skillItem = barProgress.parentElement.parentElement;
-        skillItem.offsetTop - viewport <= scrollMouse ? barProgress.classList.add('animated') : undefined;
+        if (
+            skillItem.offsetTop - viewport <= scrollMouse
+            && 
+            viewport + scrollMouse < skillItem.offsetTop + viewport + skillItem.offsetHeight - HEIGHT_HEADER) {
+            barProgress.classList.add('animated');
+        }
     })
 }
 
@@ -29,5 +35,5 @@ barsProgress.forEach(barProgress => {
     barProgress.addEventListener('animationstart', HandleProgressCurrent);
 });
 
-window.onscroll = ProgressAnimation;
-window.addEventListener('load', ProgressAnimation);
+window.onscroll = observeVisibleElementScreen();
+window.addEventListener('load', observeVisibleElementScreen());
