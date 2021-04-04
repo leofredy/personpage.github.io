@@ -35,5 +35,5 @@ barsProgress.forEach(barProgress => {
     barProgress.addEventListener('animationstart', HandleProgressCurrent);
 });
 
-window.onscroll = observeVisibleElementScreen();
-window.addEventListener('load', observeVisibleElementScreen());
+window.onscroll = observeVisibleElementScreen;
+window.addEventListener('load', observeVisibleElementScreen);
