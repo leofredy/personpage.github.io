@@ -8,7 +8,7 @@ function observeVisibleElementScreen(){
     barsProgress.forEach((barProgress) => {
         const skillItem = barProgress.parentElement.parentElement;
         if (
-            skillItem.offsetTop - viewport <= scrollMouse
+            skillItem.offsetTop <= scrollMouse + viewport
             && 
             viewport + scrollMouse < skillItem.offsetTop + viewport + skillItem.offsetHeight - HEIGHT_HEADER) {
             barProgress.classList.add('animated');
