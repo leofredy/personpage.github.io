@@ -18,19 +18,26 @@ const listElementFadeTop = [
   document.querySelector(".my-recent-works h1")
 ]
 
+const listElementRight = [
+  document.querySelector(".my-services p")
+]
+
 let animationsProgress = new AnimationsInOut("fadeProgress", listElementProgress, 111, true, true);
 let animationsZoom = new AnimationsInOut("fadeZoom", listElementZoom, 111);
 let animationFadeLeft = new AnimationsInOut("fadeLeft", listElementFadeLeft, 111);
+let animationFadeRight = new AnimationsInOut("fadeRight", listElementRight, 111);
 let animationFadeTop = new AnimationsInOut("fadeTop", listElementFadeTop, 111);
 
 animationsZoom = animationsZoom.init();
 animationsProgress = animationsProgress.init();
 animationFadeLeft = animationFadeLeft.init();
+animationFadeRight = animationFadeRight.init();
 animationFadeTop = animationFadeTop.init();
 
 function startingAnimations() {
   animationsZoom();
   animationFadeLeft();
+  animationFadeRight();
   animationsProgress();
   animationFadeTop();
 }

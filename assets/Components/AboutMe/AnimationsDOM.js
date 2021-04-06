@@ -57,21 +57,23 @@ export default class AnimationsInOut {
 
   inputAnimation(listElements) {
     listElements.forEach(element => {
-      element.classList.add(`animated-${this.animation}`);
+      element.classList.add(`animated-enter-${this.animation}`);
+      element.classList.remove(`animated-leave-${this.animation}`);
     });
   }
 
   exitAnimation(listElements) {
     listElements.forEach(element => {
-      element.classList.remove(`animated-${this.animation}`);
+      element.classList.remove(`animated-enter-${this.animation}`);
+      element.classList.add(`animated-leave-${this.animation}`);
     });
   }
 
-  // addTransition() {
-  //   this.listElements.forEach(element => {
-  //     // element.style.transition = "all .6s ease";
-  //   });
-  // }
+  addTransition() {
+    this.listElements.forEach(element => {
+      element.style.transition = "all 1s ease";
+    });
+  }
 
   bindEvents() {
     this.onStart = this.onStart.bind(this);
@@ -82,7 +84,7 @@ export default class AnimationsInOut {
     if (this.typeSkill) {
       this.animationSkillProgress();
     }
-
+    this.addTransition();
     this.observeElementVisible();
     this.inputAnimation(this.visisbleElements);
     this.exitAnimation(this.invisibleElements);
@@ -95,6 +97,7 @@ export default class AnimationsInOut {
 
   init() {
     this.bindEvents();
+    this.exitAnimation(this.listElements);
     return this.executora;
   }
 }
