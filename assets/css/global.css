@@ -100,6 +100,7 @@ ul, li {
 body {
     background-color: var(--background-main);
     position: relative;
+    overflow-x: hidden;
 }
 
 
