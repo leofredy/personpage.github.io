@@ -103,6 +103,9 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    overflow-y: auto;
+}
 
 
 @media(min-width: 768px){

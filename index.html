@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="./assets/Components/Loading/style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@Leofreedy</title>
-    <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">
-    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/global.css">
-    <link rel="stylesheet" href="./assets/css/animations.css">
-    <link rel="stylesheet" href="./assets/Components/Header/style.css">
-    <link rel="stylesheet" href="./assets/Components/Header/Carousel/style.css">
-    <link rel="stylesheet" href="./assets/Components/AboutMe/style.css">
-    <link rel="stylesheet" href="./assets/Components/MyServices/style.css">
-    <link rel="stylesheet" href="./assets/Components/BannerHire/style.css">
-    <link rel="stylesheet" href="./assets/Components/MyRecentWorks/style.css">
-    <link rel="stylesheet" href="./assets/Components/MyRecentWorks/JobViewer/style.css">
-    
-    <link rel="stylesheet" href="./assets/Components/Footer/style.css">
-    
-    <!--Animações Fade-->
-    <link rel="stylesheet" href="./assets/Components/AboutMe/animations.css">
+    <head>
+        <link rel="stylesheet" href="./assets/Components/Loading/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@Leofreedy</title>
+        <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">
+        <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/css/global.css">
+        <link rel="stylesheet" href="./assets/css/animations.css">
+        <link rel="stylesheet" href="./assets/Components/Header/style.css">
+        <link rel="stylesheet" href="./assets/Components/Header/Carousel/style.css">
+        <link rel="stylesheet" href="./assets/Components/AboutMe/style.css">
+        <link rel="stylesheet" href="./assets/Components/MyServices/style.css">
+        <link rel="stylesheet" href="./assets/Components/BannerHire/style.css">
+        <link rel="stylesheet" href="./assets/Components/MyRecentWorks/style.css">
+        <link rel="stylesheet" href="./assets/Components/MyRecentWorks/JobViewer/style.css">
+        
+        <link rel="stylesheet" href="./assets/Components/Footer/style.css">
+        
+        <!--Animações Fade-->
+        <link rel="stylesheet" href="./assets/Components/AboutMe/animations.css">
+        <!--GSAP Animations-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/MotionPathPlugin.min.js"></script>
+        <script src="./assets/Components/Loading/gsapAnimations.js"></script>
 </head>
 <body>
     <header class="unfold-header">
@@ -54,7 +58,7 @@
                 </ul>
             </nav>
         </div>
-
+        
         <div class="carousel">
             <div class="next">
                 <i class="lni lni-chevron-right"></i>
@@ -62,18 +66,18 @@
             <div class="go-back">
                 <i class="lni lni-chevron-left"></i>
             </div>
-    
+            
             <div class="items">
                 <img class="selected" src="./assets/img/js-carousel.jpg" alt="">
                 <img src="./assets/img/node-carousel.png" alt="">
             </div>
-
+            
             <div class="sphere-controller">
                 <div class="sphere-item selected"></div>
                 <div class="sphere-item"></div>
             </div>
         </div>
-
+        
     </header>
     <main>
         <section class="about-me container">
@@ -90,108 +94,108 @@
                     </p>
                 </div>
                 
-                    
-                    <div class="informations-additional">
-                        <div class="private ">
-                            <div class="long-presentation">
-                                <h2>
-                                    Hi There! I'm Mark Parker
-                                </h2>
+                
+                <div class="informations-additional">
+                    <div class="private ">
+                        <div class="long-presentation">
+                            <h2>
+                                Hi There! I'm Mark Parker
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
+                                incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation 
+                                ullamco laboris nisi ut aliquip ex ea commodo 
+                                consequat.
+                            </p>
+                        </div>
+                        <ul>
+                            <li> 
+                                <i class="lni lni-calendar"></i>
+                                <h3>
+                                    Date of birth:
+                                </h3>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-                                    incididunt ut labore et dolore magna aliqua. 
-                                    Ut enim ad minim veniam, quis nostrud exercitation 
-                                    ullamco laboris nisi ut aliquip ex ea commodo 
-                                    consequat.
+                                    8 June 1995
                                 </p>
-                            </div>
-                            <ul>
-                                <li> 
-                                    <i class="lni lni-calendar"></i>
-                                    <h3>
-                                        Date of birth:
-                                    </h3>
-                                    <p>
-                                        8 June 1995
-                                    </p>
-                                </li>
-                                <li> 
-                                    <i class="lni lni-envelope"></i>
-                                    <h3>
-                                        E-mail:
-                                    </h3>
-                                    <p>
-                                        parker@mysite.com.br
-                                    </p>
-                                </li>
-                                <li> 
-                                    <i class="lni lni-phone"></i>
-                                    <h3>
-                                        Phone:
-                                    </h3>
-                                    <p>
-                                        (18) 99999-9999
-                                    </p>
-                                </li>
-                                <li> 
-                                    <i class="lni lni-map-marker"></i>
-                                    <h3>
-                                        Location:
-                                    </h3>
-                                    <p>
-                                        4373, El Centro, CA
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="skills ">
-                            <ul>
-                                <li>
-                                    <header>
-                                        <h4>HTML</h4>
-                                        <h4>80%</h4>
-                                    </header>
-                                    <main>
-                                        <div class="bar-progress html"></div>
-                                        <div class="bar-inner"></div>
-                                    </main>
-                                </li>
-                                <li>
-                                    <header>
-                                        <h4>CSS</h4>
-                                        <h4>60%</h4>
-                                    </header>
-                                    <main>
-                                        <div class="bar-progress css"></div>
-                                        <div class="bar-inner"></div>
-                                    </main>
-                                </li>
-                                <li>
-                                    <header>
-                                        <h4>Photoshop</h4>
-                                        <h4>50%</h4>
-                                    </header>
-                                    <main>
-                                        <div class="bar-progress photoshop"></div>
-                                        <div class="bar-inner"></div>
-                                    </main>
-                                </li>
-                                <li>
-                                    <header>
-                                        <h4>Sketch</h4>
-                                        <h4>90%</h4>
-                                    </header>
-                                    <main>
-                                        <div class="bar-progress sketch"></div>
-                                        <div class="bar-inner"></div>
-                                    </main>
-                                </li>
-                            </ul>
-                        </div>
+                            </li>
+                            <li> 
+                                <i class="lni lni-envelope"></i>
+                                <h3>
+                                    E-mail:
+                                </h3>
+                                <p>
+                                    parker@mysite.com.br
+                                </p>
+                            </li>
+                            <li> 
+                                <i class="lni lni-phone"></i>
+                                <h3>
+                                    Phone:
+                                </h3>
+                                <p>
+                                    (18) 99999-9999
+                                </p>
+                            </li>
+                            <li> 
+                                <i class="lni lni-map-marker"></i>
+                                <h3>
+                                    Location:
+                                </h3>
+                                <p>
+                                    4373, El Centro, CA
+                                </p>
+                            </li>
+                        </ul>
                     </div>
+                    <div class="skills ">
+                        <ul>
+                            <li>
+                                <header>
+                                    <h4>HTML</h4>
+                                    <h4>80%</h4>
+                                </header>
+                                <main>
+                                    <div class="bar-progress html"></div>
+                                    <div class="bar-inner"></div>
+                                </main>
+                            </li>
+                            <li>
+                                <header>
+                                    <h4>CSS</h4>
+                                    <h4>60%</h4>
+                                </header>
+                                <main>
+                                    <div class="bar-progress css"></div>
+                                    <div class="bar-inner"></div>
+                                </main>
+                            </li>
+                            <li>
+                                <header>
+                                    <h4>Photoshop</h4>
+                                    <h4>50%</h4>
+                                </header>
+                                <main>
+                                    <div class="bar-progress photoshop"></div>
+                                    <div class="bar-inner"></div>
+                                </main>
+                            </li>
+                            <li>
+                                <header>
+                                    <h4>Sketch</h4>
+                                    <h4>90%</h4>
+                                </header>
+                                <main>
+                                    <div class="bar-progress sketch"></div>
+                                    <div class="bar-inner"></div>
+                                </main>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
-
+        
         <section class="my-services container">
             <div class="apresentation ">
                 <h1>
@@ -296,7 +300,7 @@
                 </div>
             </div>
         </section>
-
+        
         <section class="my-recent-works">
             <div class="apresentation">
                 <h1>My Recent Works</h1>
@@ -415,7 +419,7 @@
             </ul>
         </section>
     </main>
-
+    
     <footer>
         <img src="./assets/img/logo-2.png" alt="logo unfold">
         <p>
@@ -432,13 +436,13 @@
                     <i class="lni lni-facebook-filled"></i>
                 </a>
             </li>
-
+            
             <li>
                 <a href="" target="_blank">
                     <i class="lni lni-twitter-original"></i>
                 </a>
             </li>
-
+            
             <li>
                 <a href="https://github.com/leofredy" target="_blank">
                     <i class="lni lni-github-original"></i>
@@ -456,14 +460,22 @@
         </div>
     </footer>
     <div class="loading">
-        <img src="./assets/gifs/loading.gif" alt="">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
     </div>
-    <script src="./assets/Components/Loading/script.js"></script>
     <script src="./assets/Components/Header/dropdown.js"></script>
     <script src="./assets/Components/Header/Carousel/CarouselAnimation.js"></script>
-<!--
-    <script src="./assets/Components/AboutMe/SkillAnimation.js"></script>
--->
+    <!--
+        <script src="./assets/Components/AboutMe/SkillAnimation.js"></script>
+    -->
     <script type="module" src="./assets/Components/AboutMe/ActiveAnimationsDOM.js"></script>
     <script type="module" src="./assets/Components/MyRecentWorks/script.js"></script>
 </body>
